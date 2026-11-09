@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filtrar un arreglo | Ejemplo 19</title>
+  <script type="module">
+    const notas = [55, 80, 92]; // Crea un arreglo de calificaciones de ejemplo.
+    const aprobadas = notas.filter(nota => nota >= 70); // Crea un arreglo nuevo solo con notas aprobatorias.
+    document.getElementById("aprobados").innerText = aprobadas.join(", "); // Muestra las notas filtradas separadas por comas.
+  </script>
+</head>
+<body>
+  <!-- filter conserva elementos que cumplen la condición. -->
+  <p id="aprobados"></p>
+</body>
+</html>

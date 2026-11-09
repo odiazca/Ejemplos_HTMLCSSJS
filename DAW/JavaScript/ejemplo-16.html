@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evento input | Ejemplo 16</title>
+  <script type="module">
+    document.getElementById("nombre").addEventListener("input", evento => { // Escucha cada cambio hecho en el campo de nombre.
+      document.getElementById("vista").innerText = `Hola, ${evento.target.value}`; // Muestra el valor escrito en el campo.
+    }); // Cierra la funcion del evento input y la llamada.
+  </script>
+</head>
+<body>
+  <!-- input actualiza la respuesta mientras el usuario escribe. -->
+  <label>Tu nombre: <input id="nombre"></label><p id="vista">Hola</p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Método forEach | Ejemplo 08</title>
+  <script type="module">
+    const cursos = ["HTML", "CSS", "JavaScript"]; // Crea un arreglo con tres nombres de curso.
+    cursos.forEach(curso => { // Ejecuta la funcion una vez por cada curso.
+      document.getElementById("cursos").innerHTML += `<li>${curso}</li>`; // Anade el curso actual como elemento de lista.
+    }); // Cierra la funcion forEach y la llamada.
+  </script>
+</head>
+<body>
+  <!-- forEach recorre cada elemento del arreglo. -->
+  <ul id="cursos"></ul>
+</body>
+</html>

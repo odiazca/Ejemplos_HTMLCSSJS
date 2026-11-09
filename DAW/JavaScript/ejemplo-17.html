@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>classList add, remove y toggle | Ejemplo 17</title>
+  <style>
+    .resaltado { background: #fde68a; padding: 4px; }
+  </style>
+  <script type="module">
+    const texto = document.getElementById("texto"); // Guarda una referencia al parrafo que cambiara.
+    texto.classList.add("resaltado"); // Anade la clase resaltado al parrafo.
+    texto.classList.remove("resaltado"); // Quita la clase resaltado del parrafo.
+    document.getElementById("cambiar").onclick = () => texto.classList.toggle("resaltado"); // Alterna la clase cuando se pulsa el boton.
+  </script>
+</head>
+<body>
+  <!-- Las clases CSS se agregan, quitan o alternan desde JS. -->
+  <button id="cambiar">Cambiar resaltado</button><p id="texto">Aviso del curso</p>
+</body>
+</html>

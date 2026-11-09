@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Borde y box-sizing | Ejemplo 06</title>
+  <style>
+    * { box-sizing: border-box; } /* Selecciona todos los elementos. incluye relleno y borde dentro del ancho declarado. */
+    .caja { width: 220px; padding: 20px; border: 3px solid teal; } /* Selecciona la caja del modelo de caja. define el ancho de la caja. anade espacio interior entre contenido y borde. define grosor, estilo y color del borde. */
+  </style>
+</head>
+<body>
+  <!-- border-box incluye padding y borde en el ancho. -->
+  <div class="caja">Ancho total: 220 px</div>
+</body>
+</html>

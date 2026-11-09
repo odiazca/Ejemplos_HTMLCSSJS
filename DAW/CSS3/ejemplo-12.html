@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Posición static y relative | Ejemplo 12</title>
+  <style>
+    .normal { position: static; } /* Selecciona el elemento en flujo normal. elige el modo de posicionamiento. */
+    .etiqueta { position: relative; top: -8px; color: crimson; } /* Selecciona la etiqueta desplazable. elige el modo de posicionamiento. ajusta la distancia desde el borde superior. establece el color del texto. */
+  </style>
+</head>
+<body>
+  <!-- static es el flujo normal; relative permite desplazar. -->
+  <p class="normal">Contenido normal</p><span class="etiqueta">Nuevo</span>
+</body>
+</html>

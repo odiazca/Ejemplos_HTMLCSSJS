@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evento de clic | Ejemplo 15</title>
+  <script type="module">
+    let puntos = 0; // Inicializa el contador de puntos en cero.
+    document.getElementById("sumar").addEventListener("click", () => { // Registra una funcion para ejecutar al pulsar el boton.
+      puntos++; // Suma un punto.
+      document.getElementById("puntos").innerText = `Puntos: ${puntos}`; // Actualiza en pantalla el total de puntos.
+    }); // Cierra la funcion del evento clic y la llamada.
+  </script>
+</head>
+<body>
+  <!-- addEventListener responde a una interacción del usuario. -->
+  <button id="sumar">Sumar punto</button><p id="puntos">Puntos: 0</p>
+</body>
+</html>

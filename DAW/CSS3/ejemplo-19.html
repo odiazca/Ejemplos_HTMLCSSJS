@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Flexbox avanzado | Ejemplo 19</title>
+  <style>
+    .fila { display: flex; flex-wrap: wrap; gap: 10px; } /* Selecciona el contenedor flexible. define como participa el elemento en el diseno. permite que los elementos pasen a otra fila. define el espacio entre elementos. */
+    .fila div { padding: 12px; background: #bae6fd; } /* Selecciona cada tarjeta dentro de la fila. anade espacio interior entre contenido y borde. establece el color de fondo. */
+    .crece { flex-grow: 1; } /* Selecciona la tarjeta que puede crecer. permite que esta tarjeta ocupe el espacio libre. */
+  </style>
+</head>
+<body>
+  <!-- flex-wrap, gap y flex-grow distribuyen tarjetas. -->
+  <div class="fila"><div>Diseño</div><div class="crece">Código</div><div>Pruebas</div></div>
+</body>
+</html>

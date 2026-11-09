@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Condicional if y else | Ejemplo 04</title>
+  <script type="module">
+    const nota = 85; // Guarda la calificacion que se evaluara.
+    let mensaje; // Reserva una variable para el resultado.
+    if (nota >= 70) { // Comprueba si la nota alcanza 70.
+      mensaje = "Aprobado"; // Asigna el mensaje para una nota aprobatoria.
+    } else { // Inicia la alternativa si la condicion es falsa.
+      mensaje = "Revisar el tema"; // Asigna el mensaje para una nota menor a 70.
+    } // Cierra la alternativa else.
+    document.getElementById("resultado").innerText = mensaje; // Muestra el resultado en el elemento de la pagina.
+  </script>
+</head>
+<body>
+  <!-- Una condición permite elegir qué mensaje mostrar. -->
+  <p id="resultado"></p>
+</body>
+</html>

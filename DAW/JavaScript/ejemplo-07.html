@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bucle while | Ejemplo 07</title>
+  <script type="module">
+    let intentos = 1; // Inicializa el contador del primer intento.
+    while (intentos <= 3) { // Repite mientras el contador sea menor o igual a tres.
+      document.getElementById("cuenta").innerHTML += `Intento ${intentos}<br>`; // Anade el intento actual al parrafo.
+      intentos++; // Aumenta el contador para avanzar el bucle.
+    } // Cierra el bucle while.
+  </script>
+</head>
+<body>
+  <!-- while continúa mientras la condición sea verdadera. -->
+  <p id="cuenta"></p>
+</body>
+</html>

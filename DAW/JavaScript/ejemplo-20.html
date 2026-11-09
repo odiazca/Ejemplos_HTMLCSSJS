@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Transformar con map | Ejemplo 20</title>
+  <script type="module">
+    const precios = [2, 4, 6]; // Crea precios de ejemplo antes del impuesto.
+    const conImpuesto = precios.map(precio => precio * 1.07); // Crea otro arreglo aplicando un impuesto del 7 por ciento.
+    document.getElementById("dobles").innerText = conImpuesto.join(", "); // Muestra los precios calculados separados por comas.
+  </script>
+</head>
+<body>
+  <!-- map crea un arreglo transformando cada elemento. -->
+  <p id="dobles"></p>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Función tradicional | Ejemplo 09</title>
+  <script type="module">
+    function calcularTotal(precio, cantidad) { // Declara una funcion que recibe precio y cantidad.
+      return precio * cantidad; // Devuelve el producto de los argumentos.
+    } // Cierra la funcion.
+    document.getElementById("total").innerText = calcularTotal(5, 4); // Calcula un total de ejemplo y lo muestra.
+  </script>
+</head>
+<body>
+  <!-- Una función tradicional se declara con function. -->
+  <p id="total"></p>
+</body>
+</html>

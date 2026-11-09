@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bucle for | Ejemplo 06</title>
+  <script type="module">
+    const lista = document.getElementById("lista"); // Selecciona la lista donde se anadiran actividades.
+    for (let i = 1; i <= 3; i++) { // Repite el bloque tres veces usando el contador i.
+      lista.innerHTML += `<li>Actividad ${i}</li>`; // Anade una actividad numerada como elemento de lista.
+    } // Cierra el bucle for.
+  </script>
+</head>
+<body>
+  <!-- for repite una acción un número definido de veces. -->
+  <ul id="lista"></ul>
+</body>
+</html>

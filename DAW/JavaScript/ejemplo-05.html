@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Condicional switch | Ejemplo 05</title>
+  <script type="module">
+    const dia = "lunes"; // Define el dia que se evaluara.
+    let mensaje; // Reserva una variable para el resultado.
+    switch (dia) { // Compara el dia con los casos disponibles.
+      case "lunes": mensaje = "Inicio de clases"; break; // Si es lunes, asigna el mensaje y termina este caso.
+      default: mensaje = "¡Buen día!"; // Usa esta opcion cuando ningun caso coincida.
+    } // Cierra el switch.
+    document.getElementById("saludo").innerText = mensaje; // Inserta el mensaje elegido en la pagina.
+  </script>
+</head>
+<body>
+  <!-- switch es útil con varias opciones conocidas. -->
+  <p id="saludo"></p>
+</body>
+</html>

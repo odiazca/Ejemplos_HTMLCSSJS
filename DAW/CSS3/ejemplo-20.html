@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Grid y hover | Ejemplo 20</title>
+  <style>
+    .rejilla { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; } /* Selecciona el contenedor de cuadricula. define como participa el elemento en el diseno. crea tres columnas iguales. define el espacio entre elementos. */
+    article { padding: 20px; background: #dcfce7; transition: transform .9s; } /* Selecciona los articulos de la cuadricula. anade espacio interior entre contenido y borde. establece el color de fondo. anima el cambio de transformacion durante 0.9 segundos. */
+    article:hover { transform: scale(1.05); } /* Selecciona un articulo mientras el puntero esta encima. agranda el articulo al pasar el puntero. */
+  </style>
+</head>
+<body>
+  <!-- Grid organiza tarjetas; transition y transform animan hover. -->
+  <div class="rejilla">
+    <article>HTML</article>
+    <article>CSS</article>
+    <article>JavaScript</article></div>
+</body>
+</html>

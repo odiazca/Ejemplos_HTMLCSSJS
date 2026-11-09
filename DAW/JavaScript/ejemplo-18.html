@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arreglo push y pop | Ejemplo 18</title>
+  <script type="module">
+    const tareas = ["Leer HTML"]; // Crea un arreglo inicial con una tarea.
+    tareas.push("Practicar CSS"); // Agrega una tarea al final del arreglo.
+    const ultima = tareas.pop(); // Quita y guarda el ultimo elemento.
+    document.getElementById("salida").innerText = `${tareas[0]}; quitada: ${ultima}`; // Muestra la tarea restante y la que se quito.
+  </script>
+</head>
+<body>
+  <!-- push agrega un elemento y pop quita el último. -->
+  <p id="salida"></p>
+</body>
+</html>
